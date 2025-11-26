@@ -8,6 +8,7 @@ from app_escolar_api.views import users
 from app_escolar_api.views import alumnos
 from app_escolar_api.views import maestros
 from app_escolar_api.views import auth
+from app_escolar_api.views import materias
 
 
 urlpatterns = [
@@ -28,7 +29,9 @@ urlpatterns = [
     #Login
         path('login/', auth.CustomAuthToken.as_view()),
     #Logout
-        path('logout/', auth.Logout.as_view())
+        path('logout/', auth.Logout.as_view()),
+    #Materias
+        path('lista-materias/', materias.MateriasAll.as_view()),
 ]
 
 if settings.DEBUG:
