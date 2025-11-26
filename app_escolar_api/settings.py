@@ -36,7 +36,8 @@ MIDDLEWARE = [
 # Configuración de CORS: define orígenes permitidos y quita CORS_ORIGIN_ALLOW_ALL
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:4200',
-    'https://app-escolar-webapp-nu.vercel.app'
+    'https://app-escolar-webapp-nu.vercel.app',
+    'https://app-escolar-webapp-6b2u.vercel.app'
 ]
 
 CORS_ALLOW_CREDENTIALS = True
